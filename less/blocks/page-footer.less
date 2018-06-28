@@ -1,0 +1,53 @@
+.page-footer {
+  background-color: #333333;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  &__left-column {
+    width: 50%;
+  }
+  &__right-column {
+    width: 50%;
+    & a {
+      border-bottom: 1px solid rgba(255, 255, 255, .3);
+      &:hover {
+        border-bottom: 1px solid rgba(255, 255, 255, .8);
+      }
+    }
+  }
+  &__items {
+    display: flex;
+  }
+  &__wrapper {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  &__copyright {
+    color: #95989A;
+    font-size: 14px;
+  }
+  &__tel-list{
+    margin-top: 15px;
+    list-style: none;
+    color: #95989A;
+    font-size: 14px;
+    padding: 0;
+  }
+  &__right-column {
+    text-align: right;
+  }
+}
+
+@media @tablet-widths {
+  .page-footer {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+
+@media @desktop-widths {
+  .page-footer {
+    &__wrapper {
+      max-width: 1200px;
+    }
+  }
+}

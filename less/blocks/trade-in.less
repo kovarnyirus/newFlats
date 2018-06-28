@@ -1,0 +1,229 @@
+.trade-in {
+  background-color: #F45524;
+  padding-top: 36px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  &__wrapper {
+    max-width: 80%;
+    margin: auto;
+  }
+  &__lsit {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__right-column {
+    max-width: 100%;
+    margin: auto;
+  }
+  &__left-column {
+    display: none;
+    max-width: 90%;
+    margin: auto;
+    align-items: center;
+    position: relative;
+    margin-top: -20px;
+
+  }
+  &__old-house {
+    display: inline-block;
+    width: 130px;
+    height: 169px;
+    background-image: url("../img/old_house.jpg");
+    border: 9px solid #fff;
+  }
+  &__new-house {
+    display: inline-block;
+    width: 221px;
+    height: 390px;
+    background-image: url("../img/new_house.jpg");
+    border: 9px solid #fff;
+    margin-left: -14px;
+    margin-bottom: -143px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+  }
+  &__arrow {
+    content: '';
+    width: 111px;
+    height: 56px;
+    position: absolute;
+    bottom: 9px;
+    left: 102px;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+  }
+  &__sup-title {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 35px;
+    color: #fff;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+  &__description {
+    color: #fff;
+    font-size: 15px;
+    line-height: 27px;
+    margin-bottom: 30px;
+  }
+  &__btn-call {
+    width: 60%;
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 9px 0;
+    margin: auto;
+    & a {
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+
+    }
+  }
+}
+
+@media @mobile-widths-only {
+  .trade-in{
+    &__sup-title {
+      text-align: center;
+    }
+    &__description{
+      text-align: center;
+    }
+  }
+}
+
+@media @tablet-widths {
+  .trade-in {
+    margin-bottom: 100px;
+    &__arrow{
+      bottom: -35px;
+      left: 15px;
+    }
+    &__lsit {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &__right-column {
+      max-width: 600px;
+      margin: auto;
+      padding-left: 55px;
+      padding-top: 43px;
+      margin-top: 70px;
+    }
+    &__left-column {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-top: -20px;
+    }
+    &__title {
+      text-align: left;
+    }
+    &__title {
+      font-size: 43px;
+    }
+    &__description {
+      font-size: 18px;
+    }
+    &__btn-call {
+      width: 65%;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .trade-in {
+    background-color: #F45524;
+    padding-top: 36px;
+    padding-bottom: 46px;
+    margin-bottom: 97px;
+    &__wrapper {
+      max-width: 1200px;
+      margin: auto;
+
+    }
+    &__lsit {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+    &__right-column {
+      max-width: 600px;
+      padding-left: 55px;
+      padding-top: 37px;
+      margin-top: 0;
+    }
+    &__left-column {
+      max-width: 600px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-top: 24px;
+      padding-bottom: 48px;
+    }
+    &__old-house {
+      display: inline-block;
+      width: 230px;
+      height: 269px;
+      background-image: url("../img/old_house.jpg");
+      border: 9px solid #fff;
+    }
+    &__new-house {
+      display: inline-block;
+      width: 321px;
+      height: 490px;
+      background-image: url("../img/new_house.jpg");
+      border: 9px solid #fff;
+      margin-left: -16px;
+      margin-bottom: -143px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    }
+    &__arrow {
+      content: '';
+      width: 111px;
+      height: 56px;
+      position: absolute;
+      bottom: 9px;
+      left: 102px;
+      background-image: url("../img/arrow.svg");
+      background-repeat: no-repeat;
+    }
+    &__sup-title {
+      color: #fff;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    &__title {
+      font-size: 43px;
+      line-height: 45px;
+      color: #fff;
+      margin-bottom: 28px;
+    }
+    &__description {
+      color: #fff;
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 65px;
+    }
+    &__btn-call {
+      width: 65%;
+      border: 1px solid #fff;
+      text-align: center;
+      padding: 9px 0;
+      margin: 0;
+      & a {
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+
+      }
+    }
+  }
+}

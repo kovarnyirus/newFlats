@@ -1,0 +1,133 @@
+.conditions{
+  padding-top:30px;
+  padding-bottom:30px;
+  &__wrapper{
+    max-width: 95%;
+    margin: auto;
+  }
+  &__title{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 23px;
+    max-width: 850px;
+    font-size: @mobile-size-title;
+    line-height:35px;
+  }
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &__description{
+    text-align: center;
+    font-size: 18px;
+    line-height: 27px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 45px;
+    max-width: 900px;
+  }
+  &-item{
+    max-width: 295px;
+    padding: 0 10px;
+    margin-bottom: 40px;
+    justify-content: space-around;
+    &__title{
+      font-size: 25px;
+      font-weight:bold;
+      text-align: center;
+      margin-bottom: 18px;
+      line-height: 30px;
+    }
+    &__line{
+      width: 80%;
+      margin: auto;
+      height: 1px;
+      background-color: #FF5926 ;
+      margin-bottom: 15px;
+    }
+    &__description{
+      text-align: center;
+      line-height: 24px;
+    }
+  }
+}
+@media @mobile-widths-only {
+  .conditions{
+    &__title{
+      width: 80%;
+    }
+    &__list{
+      width: 80%;
+      margin: auto;
+    }
+    &-item{
+      padding-left: 0;
+      padding-right: 0;
+      &__title{
+        font-size: @mobile-size-title;
+        line-height:1.45;
+      }
+    }
+  }
+}
+
+
+@media @desktop-widths{
+  .conditions {
+    padding-top: 81px;
+    padding-bottom: 23px;
+    &__wrapper{
+      max-width: 1120px;
+      margin: auto;
+    }
+    &__title{
+      text-align: center;
+      margin: auto;
+      margin-bottom: 15px;
+      font-size: @desktop-size-title;
+      max-width: 850px;
+      line-height:45px;
+
+    }
+    &__list{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    &__description{
+      text-align: center;
+      font-size: 18px;
+      line-height: 27px;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 78px;
+      max-width: 900px;
+    }
+    &-item{
+      max-width: 295px;
+      padding: 0 10px;
+      margin-bottom: 70px;
+      justify-content: space-around;
+      &__title{
+        font-size: 25px;
+        font-weight:bold;
+        text-align: center;
+        margin-bottom: 18px;
+        line-height: 30px;
+      }
+      &__line{
+        width: 80%;
+        margin: auto;
+        height: 1px;
+        background-color: #FF5926 ;
+        margin-bottom: 15px;
+      }
+      &__description{
+        text-align: center;
+        line-height: 24px;
+      }
+    }
+  }
+
+}
