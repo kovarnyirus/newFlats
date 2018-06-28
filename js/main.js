@@ -1,45 +1,3 @@
-// function formHandler(selector) {
-//
-//     $(selector).on('submit', function (e) {
-//
-//         e.preventDefault();
-//
-//         var _this = $(this),
-//             // nameField = document.querySelector('input[name=tel]'),
-//             $nameField = _this.find('input[name=tel]'),
-//             $emailField = _this.find('input[name=email]'),
-//             $phoneField = _this.find('input[name=phone]'),
-//             $messageField = _this.find('input[name=tel]');
-//
-//         if ($emailField.val() === '') {
-//             $emailField.addClass('has-error');
-//         }
-//         if ($phoneField.val() === '') {
-//             $phoneField.addClass('has-error');
-//         }
-//         else if ($emailField.val() !== '' && $phoneField.val() !== '') {
-//
-//             var ajaxdata = 'name=' + $nameField.val() + '&email=' + $emailField.val() + '&phone=' + $phoneField.val() + '&message=' + $messageField.val();
-//
-//             debugger;
-//             $.ajax({
-//                 type: "POST",
-//                 url: "form_handler.php",
-//                 data: ajaxdata,
-//                 success: function ($output) {
-//                     $('#form-messages').html($output);
-//                 },
-//                 error: function () {
-//                     alert('Ошибка отправки запроса, попробуйте еще раз');
-//                 }
-//             });
-//         }
-//     });
-//
-// }
-
-// formHandler('#contactForm');
-
 (function ($) {
     "use strict";
 
@@ -49,7 +7,7 @@
     function init() {
 
         var myMap = new ymaps.Map("map", {
-                center: [52.60358425779388, 39.59623749999995],
+                center: [52.60220552275487, 39.51001299999996],
                 zoom: 12,
                 controls: ['geolocationControl', 'fullscreenControl', 'zoomControl', 'rulerControl']
             }),
@@ -75,42 +33,8 @@
                 "type": "Feature",
                 "id": 3,
                 "geometry": {"type": "Point", "coordinates": [52.60648812006721, 39.50492399999999]}
-            },
-            {
-                "type": "Feature",
-                "id": 4,
-                "geometry": {"type": "Point", "coordinates": [52.59719801050119, 39.59729750000002]}
-            },
-            {
-                "type": "Feature",
-                "id": 5,
-                "geometry": {"type": "Point", "coordinates": [52.577154258916636, 39.5035135]}
-            },
-            {
-                "type": "Feature",
-                "id": 6,
-                "geometry": {"type": "Point", "coordinates": [52.59549162109813, 39.489144999999915]}
-            },
-            {
-                "type": "Feature",
-                "id": 7,
-                "geometry": {"type": "Point", "coordinates": [52.631648575933625, 39.537720999999955]}
-            },
-            {
-                "type": "Feature",
-                "id": 8,
-                "geometry": {"type": "Point", "coordinates": [52.619371002219026, 39.60198200000001]}
-            },
-            {
-                "type": "Feature",
-                "id": 9,
-                "geometry": {"type": "Point", "coordinates": [52.60358425779388, 39.59623749999995]}
             }
         ];
-
-        // objectManager.add(allPointsArray);
-
-        // myMap.geoObjects.add(objectManager);
         myMap.behaviors.disable('scrollZoom');
         myMap.behaviors.disable('multiTouch');
 
@@ -240,9 +164,6 @@
 
 
     }
-    // $('.page-header__top-block').stickMe({
-    //     topOffset: 130
-    // });
 
     function getPageScroll() {
         return window.pageYOffset;
@@ -286,7 +207,6 @@ function onScroll() {
 $(window).on("load", function () {
 
     if ($(".inmap-content").length > 0) {
-        // $(".map-menu .map-menu__list.content").mCustomScrollbar({live: 'true'});
     } else {
         return;
     }

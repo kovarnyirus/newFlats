@@ -7,7 +7,7 @@ $flat = htmlspecialchars($_REQUEST['flat'], ENT_QUOTES);
 
 
 if (!$errors) {
-    $to = 'profy48@gmail.com, 6433797@sms.beemail.ru, info@bixels.ru';
+    $to = 'kovarnyi@gmail.com';
     $header = 'MIME-Version: 1.0'."\r\n";
     $header .= 'Content-type: text/html; charset=utf-8'."\r\n";
     $header .= 'From: =?utf-8?b?'.base64_encode("Долевое 48: Заявка от [$email]").'?= <no-reply@'.$_SERVER['HTTP_HOST'].'>'."\r\n";
